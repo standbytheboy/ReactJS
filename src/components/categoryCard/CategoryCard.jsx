@@ -5,7 +5,7 @@ const CategoryCard = ({ category }) => {
     return (
         <div className="category-card">
             <div className="card-image-wrapper">
-                <img className='category-image' src={category.imagem} alt="Imagem ilustrativas sobre as categorias de produtos." />
+                <img className='category-image' src={category.imagem} alt="Imagem ilustrativa sobre a categoria de produtos." />
             </div>
             <div className="card-info">
                 <div className="card-text">

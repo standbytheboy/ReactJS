@@ -1,0 +1,46 @@
+.animal-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-shrink: 0;
+    margin: 0 5rem;
+}
+
+.animal-image-wrapper {
+    background-color: #333;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.animal-card:first-child .animal-image-wrapper {
+    background-color: #ff9900;
+    background-image: linear-gradient(to top right, #ffb347, #ff9900);
+}
+
+.animal-image {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+/* O primeiro card, com a cor de destaque, tem a imagem em branco */
+.animal-card:first-child .animal-image {
+    filter: brightness(0) invert(1);
+}
+
+.animal-name {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+}

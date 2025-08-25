@@ -1,6 +1,6 @@
-.category-carousel-section {
+.carousel-section {
     padding: 50px;
-    background-color: #f7f7f7;
+    background-color: #fcfcfc;
 }
 
 .carousel-header {
@@ -31,23 +31,23 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .nav-btn:hover {
-    background-color: #ff9900;
-    border-color: #ff9900;
+    background-color: #000;
+    border-color: #000;
     color: #fff;
 }
 
-.category-cards-container {
+.cards-container {
     display: flex;
     overflow-x: scroll;
-    -webkit-overflow-scrolling: touch; /* Suaviza o scroll no iOS */
+    -webkit-overflow-scrolling: touch;
     padding-bottom: 20px;
-    scrollbar-width: none; /* Firefox */
+    scrollbar-width: none;
 }
 
-.category-cards-container::-webkit-scrollbar {
-    display: none; /* Chrome, Safari */
+.cards-container::-webkit-scrollbar {
+    display: none;
 }
