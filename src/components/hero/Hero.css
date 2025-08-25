@@ -2,18 +2,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     background-color: #F8F9FA;
     padding: 80px 50px;
-    position: relative;
     overflow: hidden;
-    margin-top: -20px; /* Para 'grudar' no componente anterior */
+    margin-top: -20px;
     width: 100%;
 }
 
-/* Conteúdo de Texto */
 .hero-content {
-    z-index: 1; /* Garante que o conteúdo fique acima das ilustrações */
+    z-index: 1;
     text-align: left;
+    width: 40rem;
 }
 
 .subtitle {
@@ -40,13 +40,59 @@
     margin-bottom: 30px;
 }
 
-/* Ilustrações de Fundo */
 .hero-image-container {
     width: 40rem;
-    margin-right: 10rem;
-    margin-bottom: -85px;
+    margin-right: 5rem; 
+    margin-bottom: -5.5rem;
 }
 
 img {
     width: 50rem;
+    max-width: 100%;
+    height: auto;
+}
+
+/* MEDIA QUERIES PARA RESPONSIVIDADE  */
+
+@media (max-width: 1370px) {
+    .hero {
+        padding: 60px 30px 0; 
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .hero-content {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px; /* Adiciona espaço entre o texto e a imagem */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-image-container {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    img {
+        width: 100%;
+        max-width: 500px; /* Limita o tamanho máximo da imagem em telas menores */
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 40px 20px 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
 }
