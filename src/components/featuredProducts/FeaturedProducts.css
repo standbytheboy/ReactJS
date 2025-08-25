@@ -1,0 +1,19 @@
+.featured-products-section {
+    padding: 50px;
+    background-color: #fcfcfc;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.product-cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
