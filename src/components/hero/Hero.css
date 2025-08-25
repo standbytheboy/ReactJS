@@ -1,0 +1,52 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F8F9FA;
+    padding: 80px 50px;
+    position: relative;
+    overflow: hidden;
+    margin-top: -20px; /* Para 'grudar' no componente anterior */
+    width: 100%;
+}
+
+/* Conteúdo de Texto */
+.hero-content {
+    z-index: 1; /* Garante que o conteúdo fique acima das ilustrações */
+    text-align: left;
+}
+
+.subtitle {
+    color: #ff9900;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #333;
+    line-height: 1.2;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Ilustrações de Fundo */
+.hero-image-container {
+    width: 40rem;
+    margin-right: 10rem;
+    margin-bottom: -85px;
+}
+
+img {
+    width: 50rem;
+}
