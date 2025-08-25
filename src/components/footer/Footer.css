@@ -1,0 +1,117 @@
+.footer-container {
+    background-color: #f7f7f7;
+    padding: 80px 50px 30px;
+    position: relative;
+    overflow: hidden;
+    color: #555;
+    font-family: Arial, sans-serif;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><path fill="%23e0e0e0" d="M30 10l-5 5 10 10-5 5-10 10-5 5 10 10-5 5-10 10-5 5 10 10-5 5-10 10-5 5z" opacity=".2"/></svg>'); /* Exemplo de pegada de pata, substitua por uma imagem real */
+    background-repeat: repeat;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.footer-logo .logo-icon {
+    font-size: 30px;
+    margin-right: 8px;
+    color: #ff9900;
+}
+
+.footer-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: #555;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff9900;
+}
+
+.column-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul a:hover {
+    color: #ff9900;
+}
+
+.footer-bottom {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.payment-logos img {
+    height: 25px;
+    margin-left: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .payment-logos {
+        margin-top: 10px;
+    }
+}
